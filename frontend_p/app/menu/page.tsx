@@ -191,10 +191,10 @@ export default function MenuPage() {
       {/* Special Diets */}
       <section className="py-12 bg-alabaster">
         <div className="container-custom">
-          <h2 className="text-2xl font-bold text-secondary-navy mb-6 text-center">Dietary Information</h2>
+          <h2 className="text-2xl font-bold text-secondary-navy mb-6 text-center">Información Dietética</h2>
           <p className="text-center text-muted-teal max-w-3xl mx-auto">
-            We accommodate various dietary needs. Please inform our staff about any allergies or restrictions.
-            Vegetarian, vegan, and gluten-free options are available upon request.
+            Atendemos diversas necesidades dietéticas. Por favor, informe a nuestro personal sobre cualquier alergia o restricción. 
+            {/* Opciones vegetarianas, veganas y sin gluten disponibles a solicitud. */}
           </p>
         </div>
       </section>
