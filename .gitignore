@@ -1,3 +1,16 @@
+### Front-end artefacts
+frontend_p/.next/
+frontend_p/node_modules/
+
+### Back-end virtual-env & caches
+backend_p/par_venv/
+backend_p/**/__pycache__/
+
+### Misc
+.env
+.env.*
+.DS_Store
+
 # Logs
 logs
 *.log
