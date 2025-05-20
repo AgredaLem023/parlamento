@@ -1,0 +1,39 @@
+# Front-end artefacts
+frontend_p/.next/
+frontend_p/node_modules/
+
+# Back-end virtual-env & caches
+backend_p/par_venv/
+backend_p/**/__pycache__/
+
+# Environment variables / OS cruft
+.env
+.env.*
+.DS_Store
+
+
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

@@ -1,0 +1,25 @@
+services:
+  # Backend API service
+  - type: web
+    name: parlamento-backend
+    env: python
+    buildCommand: pip install -r backend_p/requirements.txt
+    startCommand: cd backend_p && uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
+    
+  # Frontend Next.js site
+  - type: web
+    name: parlamento-frontend
+    env: node
+    buildCommand: cd frontend_p && npm install && npm run build
+    startCommand: cd frontend_p && npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20.11
+      - key: NEXT_PUBLIC_API_URL 
+        fromService:
+          name: parlamento-backend
+          type: web
+          envVarKey: RENDER_EXTERNAL_URL
